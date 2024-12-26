@@ -16,7 +16,7 @@ function ImageGenerator() {
 
     try {
       // We send JSON to our backend. The backend will transform it into FormData for Vyro.ai
-      const response = await fetch("http://localhost:5000/api/generate-image", {
+      const response = await fetch("https://text-to-image-backend-seven.vercel.app/api/generate-image", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
